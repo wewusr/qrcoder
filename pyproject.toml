@@ -1,0 +1,22 @@
+[project]
+name = "qrcoder"
+version = "0.1.0"
+description = "Generate and read QRCodes from the terminal"
+requires-python = ">=3.9"
+readme = "README.md"
+dependencies = [
+    "qrcode[pil]",
+    "pyzbar",
+    "colorist",
+    "Pillow",
+]
+
+[project.scripts]
+qrcoder = "main:main"
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP"]
