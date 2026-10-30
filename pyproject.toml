@@ -9,6 +9,7 @@ dependencies = [
     "pyzbar",
     "colorist",
     "Pillow",
+    "rich",
 ]
 
 [project.scripts]
